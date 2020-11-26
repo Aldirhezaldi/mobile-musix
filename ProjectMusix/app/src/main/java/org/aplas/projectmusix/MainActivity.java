@@ -27,9 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
         if(savedInstanceState == null){
-            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new HomePage()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new HomeFrag()).commit();
         }
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.neg_bar);
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
                     switch (item.getItemId()){
                         case R.id.nav_home:
-                            fragment = new HomePage();
+                            fragment = new HomeFrag();
                             break;
                         case R.id.nav_music:
                             fragment = new MusicPage();

@@ -6,8 +6,8 @@
 
     <data>
         <variable
-            name="info"
-            type="org.aplas.projectmusix.Info" />
+            name="infoVM"
+            type="org.aplas.projectmusix.InfoModel" />
     </data>
 
 <RelativeLayout
@@ -34,7 +34,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
-            android:text="@{info.nama}"/>
+            android:text="@{infoVM.info.nama}"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
-            android:text="@{info.kelas}"/>
+            android:text="@{infoVM.info.kelas}"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -50,7 +50,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
-            android:text="@{info.nim}"/>
+            android:text="@{infoVM.info.nim}"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -58,7 +58,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
-            android:text="@{info.hobi}"/>
+            android:text="@{infoVM.info.hobi}"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -66,7 +66,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
-            android:text="@{info.nomor}"/>
+            android:text="@{infoVM.info.nomor}"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -74,7 +74,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
-            android:text="@{info.umur}"/>
+            android:text="@{infoVM.info.umur}"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -82,7 +82,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
-            android:text="@{info.jurusan}"/>
+            android:text="@{infoVM.info.jurusan}"/>
     </LinearLayout>
 </RelativeLayout>
 </layout>

@@ -28,8 +28,9 @@ public class InfoPage extends Fragment {
                              Bundle savedInstanceState) {
         InfoBinding bindingInfo = DataBindingUtil.inflate(inflater, R.layout.info, container, false);
         modelInfo = new ViewModelProvider(requireActivity()).get(InfoModel.class);
+        bindingInfo.setInfoVM(modelInfo);
         Info info = new Info("Rhezaldi Irnantyo Irawan", "TI-3E", "1841720164", "Menonton Film", "085850336940", "20 Tahun","Teknologi Informasi");
-        bindingInfo.setInfo(info);
+        modelInfo.setInfo(info);
         return bindingInfo.getRoot();
     }
 }
