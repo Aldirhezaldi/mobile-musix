@@ -11,11 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import static org.aplas.musixplayer.MainActivity.musicFiles;
+import static org.aplas.musixplayer.MusicAdapter.mFiles;
 
 public class SongsFragment extends Fragment {
 
     RecyclerView recyclerView;
-    MusicAdapter musicAdapter;
+    static MusicAdapter musicAdapter;
 
     public SongsFragment() {
     }
